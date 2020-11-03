@@ -82,7 +82,7 @@ You can run the newly built app with `npm run start`. This uses [sirv](https://g
 
 In `rollup.config.js` there is a flag called `isProduction`. This variable gets replaced via @rollup/plugin-replace by either `false`
 when in development build _(when started with 'npm run dev')_ or `true` when in production build _(when started with 'npm run build'_.
-This way, you can check on ´isProduction´ in your code during runtime, to determine whether you are in dev- or production build.
+This way, you can check on `isProduction` in your code during runtime, to determine whether you are in dev- or production build.
 
 Example: to log the build mode to the console
 ```
