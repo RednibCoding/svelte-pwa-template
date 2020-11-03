@@ -29,7 +29,7 @@ npm install
 npm run dev
 ```
 
-Navigate to [localhost:5000](http://localhost:5000). You should see your app running. Edit a component file in `src`, save it, and reload the page to see your changes.
+Navigate to [localhost:5000](http://localhost:5000). You should see your app running. Edit a `.svelte component` file in `src`, save it, and reload the page to see your changes.
 
 By default, the server will only respond to requests from localhost. To allow connections from other computers, edit the `sirv` commands in package.json to include the option `--host 0.0.0.0`.
 
@@ -80,9 +80,9 @@ You can run the newly built app with `npm run start`. This uses [sirv](https://g
 
 ## Determine between production and development build during runtime
 
-In `rollup.config.js` there is a flag called `isProduction`. This variable gets replaced via @rollup/plugin-replace by either `false`
-when in development build _(when started with 'npm run dev')_ or `true` when in production build _(when started with 'npm run build'_.
-This way, you can check on `isProduction` in a `.svelte component` during runtime, to determine whether you are in dev- or production build.
+In `rollup.config.js` there is a flag called `isProduction`. This flag gets replaced via @rollup/plugin-replace by either `false`
+when in development build _('npm run dev')_ or `true` when in production build _('npm run build')_.
+This way, you can check on `isProduction` in a `.svelte component` file during runtime, to determine whether you are in dev- or production build.
 
 Example: to log the build mode to the console
 ```
