@@ -91,4 +91,4 @@ Example: to log the build mode to the console
 console.log( "BUILD: " + (isProduction ? "Production" : "Development") );
 ```
 
-*Note `isProduction` is globaly accessable from any `.svelte` component. So there is no need for extra imports.*
+*Note: `isProduction` is globaly accessable from any `.svelte` component. So there is no need for extra imports.*
