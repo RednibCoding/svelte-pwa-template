@@ -84,7 +84,6 @@ In `rollup.config.js` there is a flag called `isProduction`. This flag gets repl
 when in development build _('npm run dev')_ or `true` when in production build _('npm run build')_.
 This way, you can check on `isProduction` in a `.svelte component` file during runtime, to determine whether you are in dev- or production build.
 The replacement is done via [@rollup/plugin-replace](https://github.com/rollup/plugins/tree/master/packages/replace) which is included in your package.json's `devDependencies`.
-
 `isProduction` is defined in `rollup.config.js`.
 
 Example: to log the build mode to the console
