@@ -42,7 +42,7 @@ By default, the server will only respond to requests from localhost. To allow co
 ```
 
 Now typing either _npm run dev_ or _npm run start_ command, your svelte app will be opened on local network and thanks to that,
-you will be able to see your project state on each device connected to your network
+you will be able to see your project state on each device connected to your network.
 
 ```
 rollup v2.28.1
@@ -60,7 +60,7 @@ LiveReload enabled
 ## PWA Configuration
 
 - The `service-worker.js` and `manifest.json` files are in the `public` folder.
-- You should update the icons in `/public/images/icons`
+- You should update the icons in `/public/images/icons` .
 - For an offline experience edit the `/public/offline.html` file.
 - This PWA is installable, the `/public/scripts/install.js` file has the install configuration.
     Note: If you don't want to make the app installable you can remove the script from the `index.html` file in the `public` folder.
@@ -89,3 +89,5 @@ Example: to log the build mode to the console
 // Log build mode
 console.log( "BUILD: " + (isProduction ? "Production" : "Development") );
 ```
+
+*Note that you don't have to import an extra thing in order to access `isProduction`.*
