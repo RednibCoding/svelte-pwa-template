@@ -80,11 +80,10 @@ You can run the newly built app with `npm run start`. This uses [sirv](https://g
 
 ## Determine between production and development build during runtime
 
-In `rollup.config.js` there is a flag called `isProduction`. This flag gets replaced by either `false`
+In `rollup.config.js` there is a flag defined called `isProduction`. This flag gets replaced by either `false`
 when in development build _('npm run dev')_ or `true` when in production build _('npm run build')_.
 This way, you can check on `isProduction` in a `.svelte component` file during runtime, to determine whether you are in dev- or production build.
 The replacement is done via [@rollup/plugin-replace](https://github.com/rollup/plugins/tree/master/packages/replace) which is included in your package.json's `devDependencies`.
-`isProduction` is defined in `rollup.config.js`.
 
 Example: to log the build mode to the console
 ```
